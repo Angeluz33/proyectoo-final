@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PORTAFOLIO Web interactivo</title>
+    <link rel="stylesheet" href="css/style.css"type="text/css">
+    <!-- EmailJ SDK-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO A LA PIZZERIA CAROL </h1>
+    </header>
+    <nav id="nav" class="">
+        <ul id="links">
+            <li><a href= menú.html  target="iframe-content">MENÚ</a></li>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        </ul>
+    </nav>
+    <main>
+        <section class="intro">
+            <img class="logo" src="img/Img.jpg">
+            <i class="fa-sharp fa-regular fa-text-size"></i> 
+            <h2>Comida italiana para todos</h2>
+            <p>La tradición, la preparación artesanal,<br>
+            la innovación y el cuidado de los pequeños detalles,<br>
+            enriquecen esta experiencia gastronómica inspirada<br>
+            en sabores y aromas italianos.</p>    
+        </section>
+        <section class="gallery">
+            <h2>PIZZERIA <span> CAROL</span> 
+            <div>
+                <img src="img/pizza.jpg" alt="imagen1" class="caro">
+                <img src="img/lasagna.jpg" alt="imagen2"class="caro"> 
+                <img src="img/pasta.jpg" alt="imagen3"class="caro">
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Formulario de contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe el mensaje aqui" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
+          
+    </main>
+    <footer>
+        <p>@2024 Todos los derechos reservados.</p>
+    </footer> 
+    <script>
+          //Inicializar emailJS con tu clave publica
+        (function(){
+            emailjs.init("66C_A1xJBsn88zNpe"); //reeplazar con la clave publica
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

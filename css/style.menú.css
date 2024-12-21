@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #C1BAA1;
+}
+h5{
+    font-family: sunfish;
+    text-align: center;
+    padding: 1rem;
+
+}
+head title{
+    color:aliceblue;
+} 
+
+header,main{
+    text-align: center;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+}
+
+.card-group{
+    margin: top 8px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.logo{
+    position: relative;
+    border-radius: 25%;
+    border:1px solid #13080800;
+    width: 80px;
+    height: 300px;
+    padding: 1rem;
+    flex-direction: row;
+    
+}
+.carito{
+    width: 80px;
+    height: 200px;
+    max-width: 200px;   
+}
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+.card-group{
+    gap:2rem;
+}
+
+.card-group{
+    width:80;
+    max-width:200px;
+}  

@@ -1,0 +1,186 @@
+/* inicio de estilo base */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #C1BAA1;
+}
+header{
+    background-color: #A59D84;
+    color: #1A1A1D;
+    text-align: center;
+    padding: 1rem;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    justify-content: space-around;
+    background: #333;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: rgba(0,0,0.1);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}   
+li a{
+    width: 250%;
+    height: 250%;
+}
+
+nav ul li a:hover {
+    background-color: #C1BAA1;
+}
+
+main {
+    padding: 1rem;
+    flex-direction: row;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section{
+    flex: 3;
+}
+
+.gallery{
+    text-align: center;
+
+}
+.img_rel{
+    width: 160px;
+    height: 160px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+.gallery .images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.caro{
+    width: 160px;
+    height: 160px; 
+}     
+
+.gallery img {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 04px 8px rgba(0, 0, 0.2);
+}
+
+footer{
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.logo{
+    position: relative;
+    border-radius: 50%;
+    border:2px solid #13080800;
+    width: 300px;
+    height: 300px;
+}
+
+
+/*estilos del formulario :8:35*/
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.contact-form button {
+    background: #cb85c8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+  
+.contact-form button:hover {
+    background: #cb85c8;
+}
+  
+#statusMessage {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* fin de estilo base*/
+
+/* Media Queries*/
+
+@media (max-width: 768px){
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery .images{
+        gap: 2rem;
+    }
+    .gallery img{
+        width: 80%;
+        max-width: 200px;
+    }
+
+}
+
+
+@media (max-width: 480px){
+    header h1{
+        font-size: 1.0rem;
+
+    }
+    nav ul li a{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .gallery img{
+        width: 50%;
+        max-width: 100px;
+    }
+}
